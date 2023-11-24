@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "D74ABcsyCpqx7XsI1Ck09XMe4AxjbMiOpczrC26VkTKO40ONVvYfC8Yc6uxYf3vPWhWTKhfJvaKbkEe4QAH58w==",
+  "dgSpecHash": "v0WekwrfiAL/qfvTAYduwqK6OMDPEXBcUitsV0ZCVYgZpZ81+MwGljC/aXyTBQzdTvPM1ODP7BXDzi4F8o4jjQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\brian\\Project\\NpgsqlGeometry\\NpgsqlGeometry\\NpgsqlGeometry.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\brian\\.nuget\\packages\\entityframeworkcore.exceptions.common\\6.0.3\\entityframeworkcore.exceptions.common.6.0.3.nupkg.sha512",
+    "C:\\Users\\brian\\.nuget\\packages\\entityframeworkcore.exceptions.postgresql\\6.0.3\\entityframeworkcore.exceptions.postgresql.6.0.3.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.14\\microsoft.entityframeworkcore.7.0.14.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.14\\microsoft.entityframeworkcore.abstractions.7.0.14.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.14\\microsoft.entityframeworkcore.analyzers.7.0.14.nupkg.sha512",
@@ -19,12 +21,17 @@
     "C:\\Users\\brian\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\brian\\.nuget\\packages\\nettopologysuite\\2.5.0\\nettopologysuite.2.5.0.nupkg.sha512",
+    "C:\\Users\\brian\\.nuget\\packages\\nettopologysuite.io.postgis\\2.1.0\\nettopologysuite.io.postgis.2.1.0.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.11\\npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
+    "C:\\Users\\brian\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql.nettopologysuite\\7.0.11\\npgsql.entityframeworkcore.postgresql.nettopologysuite.7.0.11.nupkg.sha512",
+    "C:\\Users\\brian\\.nuget\\packages\\npgsql.nettopologysuite\\7.0.6\\npgsql.nettopologysuite.7.0.6.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "C:\\Users\\brian\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

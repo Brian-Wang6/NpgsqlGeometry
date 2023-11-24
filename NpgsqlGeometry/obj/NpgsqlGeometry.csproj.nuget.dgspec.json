@@ -51,11 +51,19 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EntityFrameworkCore.Exceptions.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.14, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite": {
               "target": "Package",
               "version": "[7.0.11, )"
             },

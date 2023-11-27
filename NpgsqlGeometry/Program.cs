@@ -15,7 +15,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<PostgreDBContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("LocationDbConnectionString"));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("LocationDbConnectionString"), sqlOptions =>
+    {
+        sqlOptions.UseNetTopologySuite();
+    });
     options.ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning));
 }, ServiceLifetime.Transient);
 

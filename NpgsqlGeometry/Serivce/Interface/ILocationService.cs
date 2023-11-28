@@ -6,6 +6,6 @@ namespace NpgsqlGeometry.Serivce.Interface
     {
         Task<List<Location>> GetLocationsAsync();
         Task<Location> GetLocationByIDAsync(long id);
-        Task SaveLocationAsync(Location location);
+        Task SaveLocationAsync(Response.Polygon polygon);
     }
 }

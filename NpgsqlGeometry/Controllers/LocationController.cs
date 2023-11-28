@@ -39,9 +39,9 @@ namespace NpgsqlGeometry.Controllers
 
         // POST api/<LocationController>
         [HttpPost]
-        public async Task<IActionResult> SaveLocation(Model.Location location)
+        public async Task<IActionResult> SaveLocation(Response.Polygon polygon)
         {
-            await _locationService.SaveLocationAsync(location);
+            await _locationService.SaveLocationAsync(polygon);
             return Ok();
         }
 

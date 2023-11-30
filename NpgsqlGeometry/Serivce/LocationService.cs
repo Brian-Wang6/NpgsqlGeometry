@@ -31,6 +31,17 @@ namespace NpgsqlGeometry.Serivce
             return location ?? new Model.Location();
         }
 
+        public async Task DeleteLocationAsync(long id)
+        {
+            var dbLocation = await GetLocationByIDAsync(id);
+            if (dbLocation.RegionCoords == null)
+            {
+                return;
+            }
+            postgresDBContext.Locations.Remove(dbLocation);
+            var res = await postgresDBContext.SaveChangesAsync();
+        }
+
         public async Task SaveLocationAsync(Response.Polygon polygon)
         {
             Model.Location location = ConvertPolygonToLocation(polygon);

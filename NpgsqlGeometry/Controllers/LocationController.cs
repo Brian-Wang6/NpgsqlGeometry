@@ -53,8 +53,10 @@ namespace NpgsqlGeometry.Controllers
 
         // DELETE api/<LocationController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(long id)
         {
+            await _locationService.DeleteLocationAsync(id);
+            return Ok();
         }
 
         private PolygonResponse GeomToPoint(List<Model.Location> locations)

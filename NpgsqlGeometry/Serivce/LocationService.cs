@@ -34,9 +34,18 @@ namespace NpgsqlGeometry.Serivce
         public async Task SaveLocationAsync(Response.Polygon polygon)
         {
             Model.Location location = ConvertPolygonToLocation(polygon);
-            await postgresDBContext.Locations.AddAsync(location);
-            var res = await postgresDBContext.SaveChangesAsync();
-
+            var dbLocation = await GetLocationByIDAsync(polygon.LocationUID);
+            int res;
+            if (dbLocation.RegionCoords != null)
+            {
+                dbLocation.RegionCoords = location.RegionCoords;
+                postgresDBContext.Locations.Update(dbLocation);                
+            }
+            else
+            {
+                postgresDBContext.Locations.Add(location);                
+            }
+            res = await postgresDBContext.SaveChangesAsync();
         }
 
         private Model.Location ConvertPolygonToLocation(Response.Polygon polygon)

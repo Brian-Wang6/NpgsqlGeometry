@@ -45,6 +45,14 @@ namespace NpgsqlGeometry.Controllers
             return Ok();
         }
 
+        [HttpPost("{DetectPoint}")]
+        public async Task<IActionResult> GetDetectedLocation(Response.Point point)
+        {
+            var detectedLocs = await _locationService.GetLocationsByPoint(point);
+            var polygonResponse = GeomToPoint(detectedLocs);
+            return Ok(polygonResponse);
+        }
+
         // PUT api/<LocationController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
@@ -67,7 +75,7 @@ namespace NpgsqlGeometry.Controllers
                 Response.Polygon polygon = new Response.Polygon();
                 polygon.LocationUID = location.LocationUID;
                 Geometry? geometry = location.RegionCoords;
-                var coordinates = geometry.Coordinates;
+                //var coordinates = geometry.Coordinates;
                 var pLists = geometry.ToText().Replace("POLYGON ((", "").Replace("))", "").Split("), (");
                 foreach (var pList in pLists)
                 {

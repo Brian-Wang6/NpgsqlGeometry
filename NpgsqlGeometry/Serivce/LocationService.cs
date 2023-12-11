@@ -59,6 +59,13 @@ namespace NpgsqlGeometry.Serivce
             res = await postgresDBContext.SaveChangesAsync();
         }
 
+        public async Task<List<Model.Location>> GetLocationsByPoint(Response.Point point)
+        {
+            var pointGeom = new Point(point.X, point.Y);
+            var locations = await postgresDBContext.Locations.Where(x => x.RegionCoords != null && x.RegionCoords.Contains(pointGeom)).ToListAsync();
+            return locations;
+        }
+
         private Model.Location ConvertPolygonToLocation(Response.Polygon polygon)
         {
             Model.Location location = new Model.Location();
